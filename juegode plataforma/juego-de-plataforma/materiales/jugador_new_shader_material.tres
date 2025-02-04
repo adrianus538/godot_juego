@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dnak16crno8xa"]
+
+[ext_resource type="Shader" uid="uid://dlqmdt061qr6l" path="res://shader/jugador_new_shader_material.tres" id="1_3j2qp"]
+
+[resource]
+shader = ExtResource("1_3j2qp")
+shader_parameter/ColorParameter = Color(0.789143, 0.488515, 0, 1)
+shader_parameter/velocidada = 20.0

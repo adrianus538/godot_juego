@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlhubcdnjf2mr"]
+
+[ext_resource type="Texture2D" uid="uid://cxijq1f84dauh" path="res://recusos/sprites/platforms.png" id="1_levlk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x7prw"]
+size = Vector2(30, 8)
+
+[node name="plataforma" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_levlk")
+region_enabled = true
+region_rect = Rect2(16, 33, 32, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_x7prw")
+one_way_collision = true

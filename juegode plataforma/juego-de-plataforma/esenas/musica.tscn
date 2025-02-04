@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkl8e2cq8xh0t"]
+
+[ext_resource type="AudioStream" uid="uid://efw0dvhwpfxm" path="res://recusos/music/time_for_adventure.mp3" id="1_7alq4"]
+
+[node name="musica" type="AudioStreamPlayer"]
+stream = ExtResource("1_7alq4")
+autoplay = true
+bus = &"musica "
