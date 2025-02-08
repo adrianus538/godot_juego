@@ -1,9 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://bhy8012joe1dr"]
+[gd_scene load_steps=8 format=4 uid="uid://bhy8012joe1dr"]
 
 [ext_resource type="Script" path="res://codigos/menu.gd" id="1_bqwk1"]
 [ext_resource type="Texture2D" uid="uid://cqcklv7pnwnnv" path="res://recusos/sprites/world_tileset.png" id="1_rxt7u"]
 [ext_resource type="FontFile" uid="uid://diht2ua7kq3rn" path="res://recusos/fonts/PixelOperator8.ttf" id="2_ecp1n"]
-[ext_resource type="Texture2D" uid="uid://cfdq7x0a4wb6t" path="res://recusos/sprites/knight.png" id="4_b5wje"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ecata"]
 texture = ExtResource("1_rxt7u")
@@ -144,42 +143,6 @@ bg_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hipq3"]
 bg_color = Color(0.0240298, 0.0240298, 0.0240298, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r6l4o"]
-atlas = ExtResource("4_b5wje")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tow4o"]
-atlas = ExtResource("4_b5wje")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vu582"]
-atlas = ExtResource("4_b5wje")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7w8l8"]
-atlas = ExtResource("4_b5wje")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_cf140"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r6l4o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tow4o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vu582")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7w8l8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 6.0
-}]
-
 [node name="menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -189,16 +152,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bqwk1")
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="Node2D" parent="."]
+
+[node name="cieloL" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
 scale = Vector2(5.14, 5.14)
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAkAAAAAAAEAAAAAAAoAAAABAAAAAAAAAAkAAAABAAEAAAAAAAoAAAACAAAAAAAAAAkAAAACAAEAAAAAAAoAAAADAAAAAAAAAAkAAAADAAEAAAAAAAoAAAAEAAAAAAAAAAkAAAAEAAEAAAAAAAoAAAAFAAAAAAAAAAkAAAAFAAEAAAAAAAoAAAAGAAAAAAAAAAkAAAAGAAEAAAAAAAoAAAAHAAAAAAAAAAkAAAAHAAEAAAAAAAoAAAAIAAAAAAAAAAkAAAAIAAEAAAAAAAoAAAAJAAAAAAAAAAkAAAAJAAEAAAAAAAoAAAAKAAAAAAAAAAkAAAAKAAEAAAAAAAoAAAALAAAAAAAAAAkAAAALAAEAAAAAAAoAAAAMAAAAAAAAAAkAAAAMAAEAAAAAAAoAAAANAAAAAAAAAAkAAAANAAEAAAAAAAoAAAAAAAIAAAAAAAsAAAAAAAMAAAAAAAsAAAAAAAQAAAAAAAsAAAABAAIAAAAAAAsAAAABAAMAAAAAAAsAAAABAAQAAAAAAAsAAAACAAIAAAAAAAsAAAACAAMAAAAAAAsAAAACAAQAAAAAAAsAAAADAAMAAAAAAAsAAAADAAQAAAAAAAsAAAAEAAIAAAAAAAsAAAAEAAMAAAAAAAsAAAAEAAQAAAAAAAsAAAAFAAIAAAAAAAsAAAAFAAMAAAAAAAsAAAAFAAQAAAAAAAsAAAAGAAIAAAAAAAsAAAAGAAMAAAAAAAsAAAAGAAQAAAAAAAsAAAAHAAIAAAAAAAsAAAAHAAMAAAAAAAsAAAAHAAQAAAAAAAsAAAAIAAIAAAAAAAsAAAAIAAMAAAAAAAsAAAAIAAQAAAAAAAsAAAAJAAIAAAAAAAsAAAAJAAMAAAAAAAsAAAAJAAQAAAAAAAsAAAAKAAIAAAAAAAsAAAAKAAMAAAAAAAsAAAAKAAQAAAAAAAsAAAALAAIAAAAAAAsAAAALAAMAAAAAAAsAAAALAAQAAAAAAAsAAAAMAAIAAAAAAAsAAAAMAAMAAAAAAAsAAAAMAAQAAAAAAAsAAAANAAIAAAAAAAsAAAANAAMAAAAAAAsAAAANAAQAAAAAAAsAAAAAAAUAAAAAAAwAAAABAAUAAAAAAAwAAAACAAUAAAAAAAwAAAADAAUAAAAAAAwAAAAEAAUAAAAAAAwAAAAFAAUAAAAAAAwAAAAGAAUAAAAAAAwAAAAHAAUAAAAAAAwAAAAIAAUAAAAAAAwAAAAJAAUAAAAAAAwAAAAKAAUAAAAAAAwAAAALAAUAAAAAAAwAAAAMAAUAAAAAAAwAAAANAAUAAAAAAAwAAAAAAAYAAAAAAA0AAAAAAAcAAAAAAA0AAAABAAYAAAAAAA0AAAABAAcAAAAAAA0AAAACAAYAAAAAAA0AAAACAAcAAAAAAA0AAAADAAYAAAAAAA0AAAADAAcAAAAAAA0AAAAEAAYAAAAAAA0AAAAEAAcAAAAAAA0AAAAFAAYAAAAAAA0AAAAFAAcAAAAAAA0AAAAGAAYAAAAAAA0AAAAGAAcAAAAAAA0AAAAHAAYAAAAAAA0AAAAHAAcAAAAAAA0AAAAIAAYAAAAAAA0AAAAIAAcAAAAAAA0AAAAJAAYAAAAAAA0AAAAJAAcAAAAAAA0AAAAKAAYAAAAAAA0AAAAKAAcAAAAAAA0AAAALAAYAAAAAAA0AAAALAAcAAAAAAA0AAAAMAAYAAAAAAA0AAAAMAAcAAAAAAA0AAAANAAYAAAAAAA0AAAANAAcAAAAAAA0AAAADAAIAAAAAAAsAAAA=")
 tile_set = SubResource("TileSet_mpuld")
-format = 2
-layer_0/name = "cieloL"
-layer_0/tile_data = PackedInt32Array(0, 0, 9, 65536, 0, 10, 1, 0, 9, 65537, 0, 10, 2, 0, 9, 65538, 0, 10, 3, 0, 9, 65539, 0, 10, 4, 0, 9, 65540, 0, 10, 5, 0, 9, 65541, 0, 10, 6, 0, 9, 65542, 0, 10, 7, 0, 9, 65543, 0, 10, 8, 0, 9, 65544, 0, 10, 9, 0, 9, 65545, 0, 10, 10, 0, 9, 65546, 0, 10, 11, 0, 9, 65547, 0, 10, 12, 0, 9, 65548, 0, 10, 13, 0, 9, 65549, 0, 10, 131072, 0, 11, 196608, 0, 11, 262144, 0, 11, 131073, 0, 11, 196609, 0, 11, 262145, 0, 11, 131074, 0, 11, 196610, 0, 11, 262146, 0, 11, 196611, 0, 11, 262147, 0, 11, 131076, 0, 11, 196612, 0, 11, 262148, 0, 11, 131077, 0, 11, 196613, 0, 11, 262149, 0, 11, 131078, 0, 11, 196614, 0, 11, 262150, 0, 11, 131079, 0, 11, 196615, 0, 11, 262151, 0, 11, 131080, 0, 11, 196616, 0, 11, 262152, 0, 11, 131081, 0, 11, 196617, 0, 11, 262153, 0, 11, 131082, 0, 11, 196618, 0, 11, 262154, 0, 11, 131083, 0, 11, 196619, 0, 11, 262155, 0, 11, 131084, 0, 11, 196620, 0, 11, 262156, 0, 11, 131085, 0, 11, 196621, 0, 11, 262157, 0, 11, 327680, 0, 12, 327681, 0, 12, 327682, 0, 12, 327683, 0, 12, 327684, 0, 12, 327685, 0, 12, 327686, 0, 12, 327687, 0, 12, 327688, 0, 12, 327689, 0, 12, 327690, 0, 12, 327691, 0, 12, 327692, 0, 12, 327693, 0, 12, 393216, 0, 13, 458752, 0, 13, 393217, 0, 13, 458753, 0, 13, 393218, 0, 13, 458754, 0, 13, 393219, 0, 13, 458755, 0, 13, 393220, 0, 13, 458756, 0, 13, 393221, 0, 13, 458757, 0, 13, 393222, 0, 13, 458758, 0, 13, 393223, 0, 13, 458759, 0, 13, 393224, 0, 13, 458760, 0, 13, 393225, 0, 13, 458761, 0, 13, 393226, 0, 13, 458762, 0, 13, 393227, 0, 13, 458763, 0, 13, 393228, 0, 13, 458764, 0, 13, 393229, 0, 13, 458765, 0, 13, 131075, 0, 11)
-layer_1/name = "lodemas"
-layer_1/tile_data = PackedInt32Array(458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458764, 0, 0, 458765, 0, 0, 262146, 0, 3, 327682, 0, 4, 393218, 0, 5, 393223, 458752, 5, 393216, 65536, 3, 196620, 196608, 5, 262156, 196608, 6, 327692, 196608, 7, 393228, 196608, 8, 196619, 131072, 5, 196621, 262144, 5, 458761, 327680, 9, 458762, 327680, 9, 458763, 327680, 9, 131084, 196608, 4)
-layer_2/name = "y_loque_queda"
-layer_2/tile_data = PackedInt32Array(393216, 589824, 3, 393217, 589824, 3, 393218, 589824, 3, 393219, 589824, 3, 393223, 589824, 3, 393224, 589824, 3, 393228, 589824, 3, 393229, 589824, 3, 393222, 589824, 3, 393221, 589824, 3, 393220, 589824, 3, 458761, 589824, 0, 458762, 655360, 0, 458763, 720896, 0)
+
+[node name="lodemas" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
+scale = Vector2(5.14, 5.14)
+tile_map_data = PackedByteArray("AAAAAAcAAAAAAAAAAAABAAcAAAAAAAAAAAACAAcAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAcAAAAAAAAAAAAJAAcAAAAFAAkAAAAKAAcAAAAFAAkAAAALAAcAAAAFAAkAAAA=")
+tile_set = SubResource("TileSet_mpuld")
+
+[node name="y_loque_queda" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
+scale = Vector2(5.14, 5.14)
+tile_map_data = PackedByteArray("AAAAAAYAAAAJAAMAAAABAAYAAAAJAAMAAAACAAYAAAAJAAMAAAADAAYAAAAJAAMAAAAHAAYAAAAJAAMAAAAIAAYAAAAJAAMAAAAMAAYAAAAJAAMAAAANAAYAAAAJAAMAAAAGAAYAAAAJAAMAAAAFAAYAAAAJAAMAAAAEAAYAAAAJAAMAAAAJAAcAAAAJAAAAAAAKAAcAAAAKAAAAAAALAAcAAAALAAAAAAA=")
+tile_set = SubResource("TileSet_mpuld")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -207,13 +179,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -113.5
-offset_top = -71.5
-offset_right = 113.5
-offset_bottom = 71.5
+offset_left = -109.5
+offset_top = -63.5
+offset_right = 109.5
+offset_bottom = 63.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 25
+theme_override_constants/separation = 68
 
 [node name="play" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -228,14 +200,6 @@ theme_override_fonts/font = ExtResource("2_ecp1n")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_hipq3")
 text = "salir"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(852, 522)
-scale = Vector2(5.765, 5.765)
-sprite_frames = SubResource("SpriteFrames_cf140")
-autoplay = "default"
-frame = 2
-frame_progress = 0.380737
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
