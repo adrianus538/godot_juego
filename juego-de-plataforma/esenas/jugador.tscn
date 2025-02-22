@@ -253,3 +253,5 @@ stream = ExtResource("3_t3403")
 bus = &"efeto de sonido"
 
 [node name="Timer" type="Timer" parent="salto"]
+
+[node name="time_buffer" type="Timer" parent="salto"]
