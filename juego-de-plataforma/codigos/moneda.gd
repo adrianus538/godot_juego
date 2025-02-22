@@ -6,7 +6,7 @@ extends Area2D
 
 var auotro_destrucion: bool = true
 
-func _on_body_entered(_body: Node2D) -> void:
+func _on_body_entered(body: Node2D) -> void:
 	gamemaneger.incrementa_un_punto()
 	monedas.play()
 	collision_shape_2d.call_deferred("set","disabled",true)

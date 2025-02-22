@@ -89,6 +89,7 @@ void fragment() {
 
 }
 "
+graph_offset = Vector2(-322.998, -18.7761)
 mode = 1
 flags/light_only = false
 nodes/fragment/3/node = SubResource("VisualShaderNodeTexture_x5mvb")
