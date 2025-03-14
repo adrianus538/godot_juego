@@ -1,11 +1,11 @@
 [gd_scene load_steps=37 format=3 uid="uid://t8axgaggx8r8"]
 
-[ext_resource type="Script" path="res://codigos/jugador.gd" id="1_eo0y2"]
+[ext_resource type="Script" uid="uid://ds6axbgla40f6" path="res://codigos/jugador.gd" id="1_eo0y2"]
 [ext_resource type="Texture2D" uid="uid://cfdq7x0a4wb6t" path="res://recusos/sprites/knight.png" id="1_fxydd"]
 [ext_resource type="Material" uid="uid://dnak16crno8xa" path="res://materiales/jugador_new_shader_material.tres" id="2_73vx4"]
 [ext_resource type="AudioStream" uid="uid://cwuekynie0ubd" path="res://recusos/sounds/jump.wav" id="3_t3403"]
-[ext_resource type="Script" path="res://codigos/efeto_correr.gd" id="4_kcah8"]
-[ext_resource type="Script" path="res://codigos/salto.gd" id="6_cfw1b"]
+[ext_resource type="Script" uid="uid://rh5335mvrk87" path="res://codigos/efeto_correr.gd" id="4_kcah8"]
+[ext_resource type="Script" uid="uid://bsk5vqsx6d0h5" path="res://codigos/salto.gd" id="6_cfw1b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ll4m8"]
 atlas = ExtResource("1_fxydd")

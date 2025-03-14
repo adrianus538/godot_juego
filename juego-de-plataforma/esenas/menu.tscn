@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=4 uid="uid://bhy8012joe1dr"]
 
-[ext_resource type="Script" path="res://codigos/menu.gd" id="1_bqwk1"]
+[ext_resource type="Script" uid="uid://dxh6747ktnp8j" path="res://codigos/menu.gd" id="1_bqwk1"]
 [ext_resource type="Texture2D" uid="uid://cqcklv7pnwnnv" path="res://recusos/sprites/world_tileset.png" id="1_rxt7u"]
 [ext_resource type="FontFile" uid="uid://diht2ua7kq3rn" path="res://recusos/fonts/PixelOperator8.ttf" id="2_ecp1n"]
 
@@ -192,7 +192,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ecp1n")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_isrqc")
-text = "jugar"
+text = " jugar "
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2

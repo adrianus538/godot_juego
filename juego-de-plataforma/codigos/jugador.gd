@@ -41,3 +41,6 @@ func _physics_process(delta: float) -> void:
 
 func activar_material(nuevo_material:Material) -> void:
 	animated_sprite_2d.material =nuevo_material
+
+func aplicar_inpulso_hacia_arriva(cantidad_de_inpulso : float) -> void:
+	velocity.y = -cantidad_de_inpulso

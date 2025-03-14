@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://fpqrern55xch"]
 
-[ext_resource type="Script" path="res://codigos/moneda.gd" id="1_8qgef"]
+[ext_resource type="Script" uid="uid://cv7iduhqm0tfi" path="res://codigos/moneda.gd" id="1_8qgef"]
 [ext_resource type="Texture2D" uid="uid://ep6umuluqba7" path="res://recusos/sprites/coin.png" id="1_u417d"]
 [ext_resource type="AudioStream" uid="uid://d12pu4jpqn648" path="res://recusos/sounds/coin.wav" id="3_v63sy"]
 [ext_resource type="PackedScene" uid="uid://cdnhkqqu2k6cc" path="res://esenas/drestricion_de_moneda_animacion.tscn" id="4_1lx76"]

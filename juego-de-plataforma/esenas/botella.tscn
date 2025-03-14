@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://detw37quvl3tc"]
 
 [ext_resource type="Texture2D" uid="uid://cqcklv7pnwnnv" path="res://recusos/sprites/world_tileset.png" id="1_eahxs"]
-[ext_resource type="Script" path="res://codigos/botella.gd" id="2_0imyg"]
+[ext_resource type="Script" uid="uid://cpogxbojluld1" path="res://codigos/botella.gd" id="2_0imyg"]
 [ext_resource type="AudioStream" uid="uid://5kg4uexr6s0e" path="res://recusos/sounds/power_up.wav" id="2_7wru6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_31kj1"]

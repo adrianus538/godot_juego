@@ -39,7 +39,7 @@ code = "shader_type canvas_item;
 render_mode blend_mix;
 
 uniform vec4 ColorParameter : source_color = vec4(0.789143, 0.488515, 0.000000, 1.000000);
-uniform float velocidada = 20;
+uniform float velocidada = 20.0;
 
 
 

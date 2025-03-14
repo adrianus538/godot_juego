@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cdnhkqqu2k6cc"]
 
-[ext_resource type="Script" path="res://codigos/drestricion_de_moneda_animacion.gd" id="1_lqxmw"]
+[ext_resource type="Script" uid="uid://dip1wkehfbgrj" path="res://codigos/drestricion_de_moneda_animacion.gd" id="1_lqxmw"]
 
 [node name="drestricion_de_moneda_animacion" type="Node"]
 script = ExtResource("1_lqxmw")

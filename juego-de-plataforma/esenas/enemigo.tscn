@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dix08a5c5w538"]
 
 [ext_resource type="Texture2D" uid="uid://c5ysu08qryuou" path="res://recusos/sprites/slime_green.png" id="1_6e3rg"]
-[ext_resource type="Script" path="res://codigos/enemigo.gd" id="1_g7g8w"]
+[ext_resource type="Script" uid="uid://dwno8hn37kqkv" path="res://codigos/enemigo.gd" id="1_g7g8w"]
 [ext_resource type="PackedScene" uid="uid://bep6dynt2gc3w" path="res://esenas/zonasemuerte.tscn" id="2_6j7vw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xg5qe"]
