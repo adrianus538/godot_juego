@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=4 uid="uid://dox753e4os6kt"]
+[gd_scene load_steps=20 format=4 uid="uid://dox753e4os6kt"]
 
+[ext_resource type="PackedScene" uid="uid://b1ralbjyvyf6m" path="res://esenas/hud.tscn" id="1_4n5np"]
 [ext_resource type="Script" uid="uid://c6gmq4lyhwfvx" path="res://codigos/gamemaneger.gd" id="1_b7ymw"]
 [ext_resource type="PackedScene" uid="uid://t8axgaggx8r8" path="res://esenas/jugador.tscn" id="1_m81xq"]
 [ext_resource type="FontFile" uid="uid://sv2wfo7dktea" path="res://recusos/fonts/PixelOperator8-Bold.ttf" id="2_p1qlx"]
@@ -230,6 +231,9 @@ _data = {
 
 [node name="mundo_1" type="Node"]
 metadata/_edit_horizontal_guides_ = [157.0]
+
+[node name="HUD" parent="." instance=ExtResource("1_4n5np")]
+visible = false
 
 [node name="TileMap" type="Node2D" parent="."]
 

@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1ralbjyvyf6m"]
+
+[ext_resource type="Script" uid="uid://b75e4k82k2ik1" path="res://codigos/hud.gd" id="1_5laus"]
+[ext_resource type="Texture2D" uid="uid://ep6umuluqba7" path="res://recusos/sprites/coin.png" id="1_kj8ph"]
+[ext_resource type="FontFile" uid="uid://sv2wfo7dktea" path="res://recusos/fonts/PixelOperator8-Bold.ttf" id="2_da0gm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_da0gm"]
+atlas = ExtResource("1_kj8ph")
+region = Rect2(0, 0, 16.3345, 16)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_5laus")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 61.0
+offset_bottom = 63.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = SubResource("AtlasTexture_da0gm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 54.0
+offset_top = 29.0
+offset_right = 166.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0.138034, 0.138034, 0.138034, 1)
+theme_override_fonts/font = ExtResource("2_da0gm")
+theme_override_font_sizes/font_size = 32
+text = "x 	"
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="contador monedas" type="Label" parent="."]
+offset_left = 88.0
+offset_top = 29.0
+offset_right = 200.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0.137255, 0.137255, 0.137255, 1)
+theme_override_fonts/font = ExtResource("2_da0gm")
+theme_override_font_sizes/font_size = 32
+text = "0"
+metadata/_edit_use_anchors_ = true
